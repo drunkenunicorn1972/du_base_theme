@@ -1,0 +1,41 @@
+#ra-player {
+  display: block;
+  padding: 25px;
+  text-align: right;
+  &:after {
+    clear: both;
+    content: " ";
+    display: block;
+  }
+}
+
+.ra-button {
+  //padding: .3em .9em;
+  //border-radius: .25em;
+  //background: linear-gradient(#fff, #efefef);
+  //box-shadow: 0 1px .2em gray;
+  //display: inline-flex;
+  //align-items: center;
+
+  cursor: pointer;
+  color: white;
+  background-color: $rvr-color-pp-green;
+  border: 2px solid $rvr-color-pp-green;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  line-height: 1;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: inline-block;
+
+  &:hover {
+    background-color: darken($rvr-color-pp-green, 20%);
+    color: $rvr-color-white;
+    text-decoration: none;
+  }
+
+  img {
+    height: 1em;
+    margin: 0 .5em 0 0;
+  }
+}

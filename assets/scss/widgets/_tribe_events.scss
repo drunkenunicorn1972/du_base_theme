@@ -1,0 +1,66 @@
+.tribe-events-widget {
+    .tribe-events-widget-events-list {
+        header {
+            h2 {
+                font-family: "Raleway", "Helvetica", sans-serif;
+                color: $rvr-text-color;
+                line-height: 1;
+                margin-bottom: 10px;
+                font-weight: bold;
+                font-size: 1.625rem;
+            }
+        }
+        .tribe-events-widget-events-list__events {
+
+            .tribe-events-widget-events-list__event-row {
+                padding-bottom: 6px;
+                margin-bottom: 6px;
+                border-bottom: 1px solid $rvr-bright-grey;
+
+                .tribe-events-widget-events-list__event-date-tag {
+                    margin-right: 12px;
+                    border: 1px solid $rvr-bright-grey;
+                    .tribe-events-widget-events-list__event-date-tag-month {
+                        background-color: $rvr-orange;
+                        color: $rvr-white;
+                    }
+                    .tribe-events-widget-events-list__event-date-tag-daynum {
+
+                    }
+                }
+                .tribe-events-widget-events-list__event-wrapper {
+                    article.tribe-events-widget-events-list__event {
+                        .tribe-events-widget-events-list__event-details {
+                            header {
+                                .tribe-events-widget-events-list__event-datetime-wrapper {
+
+                                }
+                                h3.tribe-events-widget-events-list__event-title {
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .tribe-events-widget-events-list__view-more {
+            text-align: center;
+            a.tribe-events-widget-events-list__view-more-link {
+                display: inline-block;
+                border-radius: 10px;
+                background-color: $rvr-dark-green;
+                border: 2px solid $rvr-dark-green;
+                color: $rvr-white;
+                padding: 6px 12px;
+                text-decoration: none;
+                &:hover {
+                    color: $rvr-text-color;
+                    background-color: transparent;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/Raleway-Regular.woff') format('woff'),
+  url('../fonts/Raleway-Regular.woff2') format('woff2'),
+  url('../fonts/Raleway-Regular.eot') format('eot'),
+  url('../fonts/Raleway-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/Raleway-SemiBold.woff') format('woff'),
+  url('../fonts/Raleway-SemiBold.woff2') format('woff2'),
+  url('../fonts/Raleway-SemiBold.eot') format('eot'),
+  url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/Raleway-Bold.woff') format('woff'),
+  url('../fonts/Raleway-Bold.woff2') format('woff2'),
+  url('../fonts/Raleway-Bold.eot') format('eot'),
+  url('../fonts/Raleway-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Chelsea-Market';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/ChelseaMarket-Regular.woff') format('woff'),
+  url('../fonts/ChelseaMarket-Regular.woff2') format('woff2'),
+  url('../fonts/ChelseaMarket-Regular.eot') format('eot'),
+  url('../fonts/ChelseaMarket-Regular.ttf') format('truetype');
+}
+
+.highlight {
+  background-color: yellow;
+  color: black;
+  border: 2px solid yellow;
+  margin: 0 5px;
+  padding: 0 5px;
+
+}

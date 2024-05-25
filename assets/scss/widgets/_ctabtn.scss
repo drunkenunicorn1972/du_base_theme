@@ -1,0 +1,74 @@
+.rvr-section-ctabtn {
+    height: 250px;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: $rvr-radius;
+    &.ctabtn--01.no-bgimage {
+        a {
+            color: $rvr-white;
+            background-color: $rvr-dark-purple;
+        }
+    }
+    &.ctabtn--02.no-bgimage {
+        a {
+            color: $rvr-white;
+            background-color: $rvr-dark-green;
+        }
+    }
+    &.ctabtn--03.no-bgimage {
+        a {
+            color: $rvr-white;
+            background-color: $rvr-grey-blue;
+        }
+    }
+    &.ctabtn--01.bgimage {
+        a {
+            color: $rvr-white;
+            background-color: rgba(131,97,146,1);
+        }
+    }
+    &.ctabtn--02.bgimage {
+        a {
+            color: $rvr-white;
+            background-color: rgba(86,112,74,1);
+        }
+    }
+    &.ctabtn--03.bgimage {
+        a {
+            color: $rvr-white;
+            background-color: rgba(99,124,121,1);
+        }
+    }
+
+    a {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border-radius: $rvr-radius;
+        opacity: 0.9;
+
+        .btn-text h2 {
+            color: $rvr-white;
+            text-decoration: none;
+            font-size: 1.4rem;
+            margin: 0;
+            padding: 0;
+        }
+        .btn-arrow {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            font-size: 2.125rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        &:hover {
+            opacity: 0.4;
+        }
+    }
+}

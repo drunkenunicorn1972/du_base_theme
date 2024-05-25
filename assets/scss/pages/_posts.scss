@@ -1,0 +1,14 @@
+.rvr-postpage-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+    li.rvr-newsslider-item {
+        margin: 0 24px 24px 0;
+        min-width: 300px;
+    }
+}

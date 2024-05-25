@@ -1,0 +1,94 @@
+.du-post-list-item {
+    width: 100%;
+    margin: 0 12px 12px 0;
+    a {
+        text-decoration: none;
+        .inner-container-top {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            height: 175px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .inner-container-bottom {
+            height: 225px;
+            background-color: $rvr-bright-grey;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 24px;
+            position: relative;
+
+            .post-title {
+                font-weight: 800;
+            }
+
+            .post-date { font-size: 0.8rem; }
+
+            .post-description {
+                max-height: 90px;
+                overflow: hidden;
+            }
+
+            .post-bottom-gradient {
+                width: 100%;
+                height: 70px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+
+                // vertical gradient from transparent yo $rvr-bright-grey
+                background: linear-gradient(180deg, rgba(0,0,0,0) 0%, $rvr-bright-grey 35%);
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            .post-button {
+                position: absolute;
+                font-size: 1.5rem;
+                color: $rvr-dark-purple;
+                bottom: 12px;
+                right: 12px;
+            }
+
+        }
+        &:hover {
+            background-color: $rvr-light-grey;
+            .inner-container-bottom {
+                background-color: $rvr-light-grey;
+
+                .post-bottom-gradient {
+                    // vertical gradient from transparent yo $rvr-bright-grey
+                    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, $rvr-light-grey 35%);
+                }
+            }
+        }
+    }
+}
+
+.du-newslist-paging {
+    text-align: center;
+    .page-numbers.current {
+        display: inline-block;
+        padding: 5px 10px;
+        width: auto;
+        background-color: $rvr-orange;
+        color: $rvr-white;
+        text-align: center;
+        text-decoration: none;
+    }
+    a.page-numbers {
+        display: inline-block;
+        padding: 5px 10px;
+        width: auto;
+        background-color: $rvr-color-grey-100;
+        color: $rvr-color-grey-600;
+        text-align: center;
+        text-decoration: none;
+        &:hover {
+            color: $rvr-white;
+            background-color: $rvr-color-grey-600;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+body {
+  color: $rvr-text-color;
+  background-color: $rvr-bright-grey;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.003em;
+  //line-height: 32px;
+  font-size: 16px;
+  word-break: break-word;
+  padding: 0;
+}
+
+main#site-content {
+  background-color: $rvr-white;
+  padding: 0 24px 96px 24px;
+  overflow: hidden;
+
+  .page-content {
+
+  }
+
+  .post-content {
+    padding-top: 36px;
+    padding-bottom: 96px;
+  }
+}
+
+h1, h2 {
+  font-family: "Raleway", "Arial", "Helvetica", sans-serif;
+  font-weight: 900;
+  color: $rvr-text-color;
+}
+
+h1, h2, h3 {
+  font-family: "Raleway", "Helvetica", sans-serif;
+  color: $rvr-text-color;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+h2 {
+  line-height: 1;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.625rem;
+}
+
+h3 {
+  line-height: 1;
+  margin-bottom: 10px;
+  font-size: 1.625rem;
+}
+
+p { margin-bottom: 1.625rem; }
+
+a,
+.elementor a {
+  color: $rvr-text-color;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+blockquote,
+.elementor blockquote {
+  background-image: url("../images/quotes.png");
+  background-repeat: no-repeat;
+  background-position: bottom 10px right 10px;
+  background-size: contain;
+  background-color: $rvr-color-bg-grey;
+  padding: 25px 50px;
+  margin: 50px auto;
+  max-width: 70%;
+  text-align:center;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+
+ul, ol {
+  margin: 50px 25px;
+  li {
+    ul, ol {
+      margin: 0;
+    }
+  }
+}
+
+.elementor-widget-container {
+  table {
+    margin: 50px 0;
+    tr {
+      th { padding: 10px 25px; color: $rvr-color-pp-purple; }
+      td { padding: 10px 25px; }
+      &:nth-child(even) {
+        background-color: $rvr-color-bg-grey;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body { padding: 24px; }
+}

@@ -1,0 +1,49 @@
+.pp-section-quote {
+  background-color: $rvr-color-pp-purple;
+  width: 100%;
+  padding: 50px;
+  margin: 50px 0;
+
+  &.qte-default {}
+  &.qte-transparent {
+    background-color: transparent;
+  }
+  &.qte-darkwindow {
+    background-color: transparent;
+    .inner-container { background-color: rgba(0,0,0,0.5); padding: 25px; border-radius: 10px; }
+  }
+
+  .inner-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: $rvr-color-bg-grey;
+
+    blockquote {
+
+      background-color: transparent;
+      background-image: none;
+      padding: 0;
+
+      .pp-quote-symbol {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        display: block;
+        text-align: center;
+        font-size: 5rem;
+        line-height: 3rem;
+      }
+      .pp-quote-title { font-size: 2rem; font-family: "Chelsea-Market", "Roboto", "Arial", "Helvetica", sans-serif; }
+      .pp-quote-subtitle { font-size: 1.7rem; }
+
+    }
+
+    .pp-quote-author {
+      font-size: 1.1rem;
+    }
+
+  }
+}
+
+@media screen and (min-width: 900px) {
+}

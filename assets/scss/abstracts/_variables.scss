@@ -1,0 +1,79 @@
+:root {
+    --rvr-dark-brown: #563833;
+    --rvr-dark-green: #56704A;
+    --rvr-grey-blue: #637C83;
+    --rvr-light-blue: #1691AA;
+    --rvr-dark-purple: #836192;
+    --rvr-orange: #ED7D31;
+
+    --rvr-black: #563833;
+    --rvr-white: #FEFEFE;
+    --rvr-bright-grey: #EFEFEF;
+    --rvr-bright-blue: #E2F1F4;
+    --rvr-bright-brown: #EDEAEA;
+}
+
+// Greys
+$rvr-color-grey-800: #3B4B4E;
+$rvr-color-grey-600: #4F6468;
+$rvr-color-grey-400: #637C83;
+$rvr-color-grey-300: #A1B1B4;
+$rvr-color-grey-200: #C1CBCD;
+$rvr-color-grey-100: #E0E5E6;
+$rvr-color-grey-50: #EFF2F3;
+
+// Blues
+$rvr-color-blue-800: #0D5766;
+$rvr-color-blue-600: #127488;
+$rvr-color-blue-400: #1691AA;
+$rvr-color-blue-300: #73BDCC;
+$rvr-color-blue-200: #A2D3DD;
+$rvr-color-blue-100: #D0E9EE;
+$rvr-color-blue-50: #E8F4F6;
+
+// Colors
+$rvr-dark-brown: #563833;
+$rvr-dark-green: #56704A;
+$rvr-grey-blue: $rvr-color-grey-200;
+$rvr-light-blue: $rvr-color-blue-400;
+$rvr-dark-purple: #836192;
+$rvr-orange: #ED7D31;
+
+$rvr-black: #444444;
+$rvr-white: #FEFEFE;
+$rvr-light-grey: $rvr-color-grey-100;
+$rvr-bright-grey: $rvr-color-grey-50;
+$rvr-bright-blue: $rvr-color-blue-50;
+$rvr-bright-brown: #EDEAEA;
+
+$rvr-main-color: $rvr-orange;
+$rvr-color-brightblue: $rvr-color-blue-50;
+$rvr-color-brightgreen: #61CE70;
+$rvr-color-darkgrey: $rvr-color-grey-200;
+$rvr-color-darkblue: $rvr-color-blue-600;
+$rvr-color-darkgreen: $rvr-dark-green;
+
+$rvr-color-black: $rvr-black;
+$rvr-color-white: $rvr-white;
+
+$rvr-color-pp-purple: $rvr-dark-purple;
+$rvr-color-pp-green: $rvr-dark-green;
+$rvr-color-pp-grey: $rvr-color-grey-200;
+$rvr-color-bg-grey: $rvr-color-grey-50;
+
+$rvr-text-color: $rvr-black;
+
+$cor-1: $rvr-dark-purple;
+$cor-2: $rvr-color-grey-50;
+$cor-3: $rvr-white;
+
+// accordion
+$color_blue: $rvr-dark-green;
+$color_blue__fade: rgba($rvr-dark-purple, .1);
+$color_white: $rvr-white;
+$color_cloud: $rvr-color-grey-50;
+
+// units
+$rvr-radius: 10px;
+$rvr-el-distance: 24px;
+$rvr-padding: $rvr-el-distance;

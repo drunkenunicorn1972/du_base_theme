@@ -1,0 +1,173 @@
+.accordion {
+  $accordion: &;
+  background: $color_white;
+
+  &-tabs {
+    display: none;
+    :focus {outline: none;}
+  }
+
+  &-item {
+    border-bottom: 1px solid $color_cloud;
+
+    &:last-child {
+      border: none;
+    }
+
+    &__label {
+      margin: 0;
+      padding: 1.25rem;
+      cursor: pointer;
+      transition: padding .2s ease;
+      position: relative;
+
+      &:after {
+        content: "";
+        height: 4px;
+        width: 4px;
+        position: absolute;
+        top: -4px;
+        right: 1.25rem;
+        bottom: 0;
+        margin: auto;
+        border: 3px solid transparent;
+        border-radius: 2px;
+        transform: rotate(45deg);
+        border-color: transparent $color_blue $color_blue transparent;
+        opacity: 1;
+        transition: opacity .1s ease;
+      }
+
+      &:hover {
+        background: lighten($color_blue, 28);
+      }
+    }
+
+    &__container {
+      padding: 0 1.25em;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition:
+              padding .2s ease,
+              opacity .5s .15s ease;
+    }
+  }
+
+  &-active {
+    background: $color_blue__fade;
+    font-weight: bold;
+
+    .accordion-item {
+      &__label {
+        padding-bottom: 0;
+        cursor: inherit;
+
+        &:hover {
+          background: none;
+        }
+
+        &:after {
+          opacity: 0;
+        }
+      }
+
+      &__container {
+        padding: 1.25em;
+        height: auto;
+        opacity: 1;
+
+        p, h1, h2, h3, h4, h5, h6 {
+          &:first-child {
+            margin-top: 0;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+
+  .accordion-tabs {
+    display: flex;
+    background: $color_blue__fade;
+
+    .accordion-tab {
+      background: $color_blue__fade;
+      padding: 1rem 2rem;
+      font: inherit;
+      flex: 1;
+      border: none;
+      cursor: pointer;
+      transition: background .1s ease;
+      &:hover{
+        background: rgba($color_white, .01)
+      }
+
+      &:last-child {
+        border-right: 0;
+      }
+
+      &.accordion-active {
+        background: $color_white;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .accordion-item {
+    padding: 2.4rem;
+    display: none;
+    border: none;
+    background: $color_white;
+    min-height: 260px;
+
+    &__label, &__container {
+      padding: 0;
+      transition: inherit;
+    }
+
+    &__label {
+      margin-bottom: 1.5rem;
+    }
+
+    &.accordion-active {
+      display: block;
+
+      .accordion-item__container {
+        padding: 0;
+      }
+    }
+  }
+}
+
+
+
+// ignore
+* {
+  box-sizing: border-box;
+}
+
+
+.accordion {
+  box-shadow: 0 1em 2em -.9em rgba(#000, .7);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+
+  @media (min-width: 600px) {
+  }
+  + p {
+    color: rgba(#fff, .8);
+    font-weight: 300;
+    font-size: .9rem;
+    margin-top: 2rem;
+
+  }
+}

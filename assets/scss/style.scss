@@ -1,0 +1,53 @@
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/placeholders';
+@import 'abstracts/mixins';
+
+// Base
+@import 'base/reset';
+@import 'base/icons';
+@import 'base/typography';
+@import 'base/base';
+
+// Components
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/cover';
+@import 'components/dropdown';
+@import 'components/tabs';
+
+// Widgets (Elementor)
+@import "widgets/elementor";
+@import 'widgets/cta';
+@import 'widgets/ctabtn';
+@import 'widgets/quote';
+@import 'widgets/bigbutton';
+@import 'widgets/event';
+@import 'widgets/responsive_slider';
+@import "widgets/tribe_events";
+@import "widgets/news_slider";
+@import "widgets/news_list";
+
+// Layout
+@import 'layout/footer';
+@import 'layout/forms';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/sidebar';
+
+// Pages
+@import 'pages/contact';
+@import 'pages/home';
+@import "pages/posts";
+
+// Themes
+@import 'themes/admin';
+@import 'themes/theme';
+
+// Vendors
+@import 'vendors/bootstrap';
+@import 'vendors/jquery-ui';
+@import "vendors/raplayer";
+

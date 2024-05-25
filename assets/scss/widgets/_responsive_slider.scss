@@ -1,0 +1,78 @@
+.rvr-splide {
+    .splide__arrows {}
+    .rvr-splide__track {
+        .splide__list {
+            .rvr-slide {
+                max-width: 1200px;
+                height: 300px;
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+
+                .rvr-slide-content {
+                    width: 80%;
+                    margin: 24px;
+                    margin-left: 24px;
+                    padding: 24px;
+                    background-color: rgba(68,68,68,0.85);
+                    border-radius: $rvr-radius;
+                    text-align: center;
+
+                    h2 { color: $rvr-white; }
+                    h3 { color: $rvr-white; }
+
+                    a {
+                        background-color: $rvr-dark-purple;
+                        color: $rvr-white;
+                        padding: 12px 24px;
+                        border-radius: $rvr-radius;
+                        border: 2px solid $rvr-dark-purple;
+                        text-decoration: none;
+                        margin: $rvr-padding 0 0;
+                        display: inline-block;
+                        text-align: center;
+                        font-weight: 800;
+                        &:hover {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .rvr-splide {
+        .splide__arrows {}
+        .rvr-splide__track {
+            .splide__list {
+                .rvr-slide {
+                    .rvr-slide-content {
+                        margin-left: 50px;
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .rvr-splide {
+        .splide__arrows {}
+        .rvr-splide__track {
+            .splide__list {
+                .rvr-slide {
+                    .rvr-slide-content {
+                        margin-left: 100px;
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+}
