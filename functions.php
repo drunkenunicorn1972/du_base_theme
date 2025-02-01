@@ -95,7 +95,7 @@ function rvr_theme_assets() {
 
 }
 
-add_action( 'wp_enqueue_scripts', 'rvr_theme_assets', 999 );
+add_action( 'wp_enqueue_scripts', 'rvr_theme_assets', 50 );
 
 /* Custom readmore text */
 
