@@ -1,5 +1,5 @@
 <?php
-include_once "includes/class-rvr-mobile-menu-walker.php";
+include_once "classes/class-rvr-mobile-menu-walker.php";
 include_once "includes/theme-customizer.php";
 
 add_theme_support( 'post-thumbnails' );
@@ -128,15 +128,3 @@ function rvr_page_navi() {
     echo '</nav>';
 } /* end page navi */
 
-
-//function rvr_register_query_vars( $vars ) {
-//    $vars[] = 'page_id';
-//    return $vars;
-//}
-//add_filter( 'query_vars', 'rvr_register_query_vars' );
-//
-//// Register query parameters for state and city
-//function rvr_register_query_param() {
-//    add_rewrite_tag('%page_id%', '([^&]+)');
-//}
-//add_action('init', 'rvr_register_query_param' );
